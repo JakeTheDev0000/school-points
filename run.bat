@@ -18,11 +18,7 @@ set /a newVer=%ver% + 1
 
 echo %newVer% > versionDev.txt
 
-git status
-git add .
-git status
-git commit -m "last known version 0.3.1-%newVer%"
-git push
+
 
 echo.
 echo.
@@ -33,6 +29,19 @@ echo.
 echo.
 
 python3 src\main.py %1
+
+echo.
+echo.
+echo pushing to github
+echo.
+git status
+git add .
+git status
+git commit -m "last known version 0.3.1-%newVer%"
+git push
+echo.
+echo.
+echo done, newest version uploaded to github
 
 echo.
 echo cleaning up...
