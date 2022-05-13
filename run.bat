@@ -37,7 +37,7 @@ echo.
 git status
 git add .
 git status
-git commit -m "last known version 0.3.1-%newVer%"
+git commit -m "last known version 0.4.0-%newVer%"
 git push
 echo.
 echo.
