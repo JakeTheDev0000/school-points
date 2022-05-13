@@ -4,3 +4,4 @@ readme.txt
 requirements.txt
 run.bat
 src
+versionDev.txt

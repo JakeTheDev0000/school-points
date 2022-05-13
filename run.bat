@@ -5,6 +5,13 @@ echo IN BETA 0.3.1
 echo.
 echo.
 
+dir /b > filelist.txt
+
+
+set version=%~dp0versionDev.txt%
+echo version: %version%
+
+
 git status
 git add .
 git status
@@ -24,5 +31,5 @@ python3 src\main.py %1
 echo.
 echo cleaning up...
 
-dir /b > filelist.txt
+
 
