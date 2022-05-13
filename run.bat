@@ -1,3 +1,4 @@
+echo OFF
 
 echo starting..
 echo IN BETA 0.3.1
@@ -13,7 +14,7 @@ set ver=%%a
 
 echo version: %ver%
 
-set newVer = %ver% + 1
+set newVer= %ver% + 1
 
 echo %newVer% > versionDev.txt
 
