@@ -8,13 +8,11 @@ echo.
 dir /b > filelist.txt
 
 
-@REM get the "versionDev.txt" file and get the version number witch is in the first line
-set ver = %~f0
-set ver = %ver:~0,1
-set ver = ver + 1
+for /f "Delims=" %%a in (versionDev.txt) do (
+set ver=%%a
+)
 
-echo version: %ver%
-
+echo "version: %ver%"
 
 git status
 git add .
