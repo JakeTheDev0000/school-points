@@ -12,10 +12,6 @@ to run the program, type:
 
     python3 src\main.py 
 
-or run the 
-
-    run.bat file
-
 # command line arguments
 
     python3 src\main.py -CMD : gets into the CMD version
