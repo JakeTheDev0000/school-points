@@ -8,8 +8,12 @@ echo.
 dir /b > filelist.txt
 
 
-set version=%~dp0versionDev.txt%
-echo version: %version%
+@REM get the "versionDev.txt" file and get the version number witch is in the first line
+set ver = %~f0
+set ver = %ver:~0,1
+set ver = ver + 1
+
+echo version: %ver%
 
 
 git status
