@@ -1,4 +1,4 @@
-dir.txt
+filelist.txt
 readme.md
 readme.txt
 requirements.txt
