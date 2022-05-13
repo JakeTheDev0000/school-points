@@ -14,7 +14,7 @@ set ver=%%a
 
 echo version: %ver%
 
-set newVer= %ver% + 1
+set /a newVer= %ver% + 1
 
 echo %newVer% > versionDev.txt
 
