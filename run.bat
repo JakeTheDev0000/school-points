@@ -16,7 +16,7 @@ echo version: %ver%
 
 set newVer = %ver% + 1
 
-echo %newVer% > versionDev.txt
+echo %newVer% 
 
 git status
 git add .
