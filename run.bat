@@ -41,7 +41,7 @@ git commit -m "last known version 0.3.1-%newVer%"
 git push
 echo.
 echo.
-echo done, newest version uploaded to github
+echo done, newest version uploaded to github at version 0.3.1-%newVer%
 
 echo.
 echo cleaning up...

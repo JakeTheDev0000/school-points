@@ -384,6 +384,8 @@ def startUp(args1):
     elif args1 == ["--soundOff"]:
         wantsSound = False
         normalStart()
+    elif args1 == ["--pass"]:
+        exit()
     else:
         normalStart()
 
