@@ -12,12 +12,16 @@ for /f "Delims=" %%a in (versionDev.txt) do (
 set ver=%%a
 )
 
-echo "version: %ver%"
+echo version: %ver%
+
+set newVer = %ver% + 1
+
+echo %newVer% > versionDev.txt
 
 git status
 git add .
 git status
-git commit -m "last known version 0.3.1-d0001"
+git commit -m "last known version 0.3.1-%newVer%"
 git push
 
 echo.
