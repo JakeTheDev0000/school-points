@@ -1,7 +1,7 @@
 echo OFF
 
 echo starting..
-echo IN BETA 0.3.1
+echo IN BETA 0.4.0
 echo.
 echo.
 
@@ -41,7 +41,7 @@ git commit -m "last known version 0.3.1-%newVer%"
 git push
 echo.
 echo.
-echo done, newest version uploaded to github at version 0.3.1-%newVer%
+echo done, newest version uploaded to github at version 0.4.0-%newVer%
 
 echo.
 echo cleaning up...
