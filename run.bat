@@ -1,11 +1,20 @@
 echo OFF
 
 echo starting..
-echo IN BETA 0.2.1
+echo IN BETA 0.3.1
 echo.
 echo.
 
-pip install -r requirements.txt
+git status
+git add .
+git status
+git commit -m "last known version 0.3.1"
+git push
+
+echo.
+echo.
+
+pip install -r requirements.txt %1
 
 echo.
 echo.

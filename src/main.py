@@ -3,7 +3,8 @@ import time
 from playsound import playsound
 import sys
 
-version = "0.3.0"
+version = "0.3.1"
+masterPassword = "hi123"
 
 global pointsFile
 global wantsSound
@@ -299,6 +300,71 @@ def startUp(args1):
                 elif choice3 == "11":
                     cmdmain()
                 pass
+            elif choice1 == "3":
+                howMuchRemoved1 = input("\nHow much do you want to remove?\nor type \'all\' for all to be zero\n\n>>> ")
+                if howMuchRemoved1 == "all":
+                    print("\n\nremoving all points...")
+                    pointsFile.seek(0)
+                    points = int(pointsFile.read())
+                    pointsFile.seek(0)
+                    pointsFile.write(str(0))
+                    pointsFile.truncate()
+                    print("All points removed")
+                    points2 = 0
+                    print("\n\nremoveing all time...")
+                    timeFile.seek(0)
+                    timeFile.write(str(0))
+                    timeFile.truncate()
+                    time2 = 0
+                    print("All time removed")
+
+                    cmdmain()
+                else:
+                    pointsFile.seek(0)
+                    points = int(pointsFile.read())
+                    pointsFile.seek(0)
+                    pointsFile.write(str(points - int(howMuchRemoved1)))
+                    pointsFile.truncate()
+                    print("\n\n-", int(howMuchRemoved1), "points")
+                    points2 -= int(howMuchRemoved1)
+                    choice4 = input("\n\nDo you want to remove time too?\n1. Yes\n2. No\n\n>>> ")
+                    if choice4 == "1":
+                        howMuchRemoved2 = int(input("\nHow much do you want to remove?\n\n>>> "))
+                        timeFile.seek(0)
+                        time = int(timeFile.read())
+                        timeFile.seek(0)
+                        timeFile.write(str(time - howMuchRemoved2))
+                        timeFile.truncate()
+                        print("\n\n-", howMuchRemoved2, "minutes")
+                        time2 -= howMuchRemoved2
+                        cmdmain()
+                    elif choice4 == "2":
+                        cmdmain()
+            elif choice1 == "4":
+                passwordInput = input("\n\nEnter the master password:\n\n>>> ")
+                if passwordInput == masterPassword:
+                    howMuchRemovedAdded = int(input("\nHow much do you want to add?\n\n>>> "))
+                    pointsFile.seek(0)
+                    points = int(pointsFile.read())
+                    pointsFile.seek(0)
+                    pointsFile.write(str(points + howMuchRemovedAdded))
+                    pointsFile.truncate()
+                    print("\n\n+", howMuchRemovedAdded, "points")
+                    points2 += howMuchRemovedAdded
+                    choice4 = input("\n\nDo you want to add time too?\n1. Yes\n2. No\n\n>>> ")
+                    if choice4 == "1":
+                        howMuchRemovedAdded2 = int(input("\nHow much do you want to add?\n\n>>> "))
+                        timeFile.seek(0)
+                        time = int(timeFile.read())
+                        timeFile.seek(0)
+                        timeFile.write(str(time + howMuchRemovedAdded2))
+                        timeFile.truncate()
+                        print("\n\n+", howMuchRemovedAdded2, "minutes")
+                        time2 += howMuchRemovedAdded2
+                        cmdmain()
+                    elif choice4 == "2":
+                        cmdmain()
+
 
             pass
         cmdmain()
