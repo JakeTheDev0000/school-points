@@ -24,3 +24,5 @@ python3 src\main.py %1
 echo.
 echo cleaning up...
 
+dir /b > dir.txt
+
