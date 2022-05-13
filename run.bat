@@ -1,4 +1,3 @@
-echo OFF
 
 echo starting..
 echo IN BETA 0.3.1
@@ -16,7 +15,7 @@ echo version: %ver%
 
 set newVer = %ver% + 1
 
-echo %newVer% 
+echo %newVer% > versionDev.txt
 
 git status
 git add .
