@@ -365,7 +365,11 @@ def startUp(args1):
                         cmdmain()
                     elif choice4 == "2":
                         cmdmain()
-
+                else:
+                    print("\n\nWrong password")
+                    cmdmain()
+            elif choice1 == "5":
+                exit(0)
 
             pass
         cmdmain()

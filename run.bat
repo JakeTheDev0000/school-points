@@ -32,7 +32,9 @@ python3 src\main.py %1
 
 echo.
 echo.
-echo pushing to github
+echo ==============================
+echo = pushing to github          =
+echo ==============================
 echo.
 git status
 git add .
@@ -41,7 +43,9 @@ git commit -m "last known version 0.4.0-%newVer%"
 git push
 echo.
 echo.
-echo done, newest version uploaded to github at version 0.4.0-%newVer%
+echo =====================================================================
+echo = done, newest version uploaded to github at version 0.4.0-%newVer% =
+echo =====================================================================
 
 echo.
 echo cleaning up...
