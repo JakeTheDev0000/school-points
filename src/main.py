@@ -174,7 +174,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 15))
                     pointsFile.truncate()
                     print("\n\n-15 points\n+15 minutes")
-                    points2 += 15
+                    points2 -= 15
                     time2 += 15
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -187,7 +187,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 30))
                     pointsFile.truncate()
                     print("\n\n-30 points\n+30 minutes")
-                    points2 += 30
+                    points2 -= 30
                     time2 += 30
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -200,7 +200,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 45))
                     pointsFile.truncate()
                     print("\n\n-45 points\n+45 minutes")
-                    points2 += 45
+                    points2 -= 45
                     time2 += 45
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -213,7 +213,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 60))
                     pointsFile.truncate()
                     print("\n\n-60 points\n+60 minutes")
-                    points2 += 60
+                    points2 -= 60
                     time2 += 60
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -226,7 +226,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 90))
                     pointsFile.truncate()
                     print("\n\n-90 points\n+90 minutes")
-                    points2 += 90
+                    points2 -= 90
                     time2 += 90
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -239,7 +239,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 120))
                     pointsFile.truncate()
                     print("\n\n-120 points\n+120 minutes")
-                    points2 += 120
+                    points2 -= 120
                     time2 += 120
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -252,7 +252,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 150))
                     pointsFile.truncate()
                     print("\n\n-150 points\n+150 minutes")
-                    points2 += 150
+                    points2 -= 150
                     time2 += 150
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -265,7 +265,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 180))
                     pointsFile.truncate()
                     print("\n\n-180 points\n+180 minutes")
-                    points2 += 180
+                    points2 -= 180
                     time2 += 180
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -278,7 +278,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 210))
                     pointsFile.truncate()
                     print("\n\n-210 points\n+210 minutes")
-                    points2 += 210
+                    points2 -= 210
                     time2 += 210
                     timeFile.seek(0)
                     timeFile.write(str(time2))
@@ -291,7 +291,7 @@ def startUp(args1):
                     pointsFile.write(str(points - 240))
                     pointsFile.truncate()
                     print("\n\n-240 points\n+240 minutes")
-                    points2 += 240
+                    points2 -= 240
                     time2 += 240
                     timeFile.seek(0)
                     timeFile.write(str(time2))
