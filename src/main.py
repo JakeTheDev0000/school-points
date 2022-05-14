@@ -165,7 +165,7 @@ def startUp(args1):
                 elif choice2 == "9":
                     cmdmain()
             elif choice1 == "2":
-                print("\n1. 15 minutes\n2. 30 minutes\n3. 45 minutes\n4. 1 hour\n5. 1.5 hours\n6. 2 hours\n7. 2.5 hours\n8. 3 hours\n9. 3.5 hours\n10. 4 hours\n11. exit")
+                print("\n1. 15 minutes\n2. 30 minutes\n3. 45 minutes\n4. 1 hour - 60\n5. 1.5 hours - 90\n6. 2 hours - 120\n7. 2.5 hours - 150\n8. 3 hours - 180\n9. 3.5 hours - 210\n10. 4 hours - 240\n11. exit")
                 choice3 = input("\n\n>>>")
                 if choice3 == "1":
                     pointsFile.seek(0)
