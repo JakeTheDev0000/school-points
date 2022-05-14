@@ -24,6 +24,18 @@ to run the program, type:
 
     python3 src\main.py --soundOff : runs the program with sound off
 
+or
+
+    run -CMD : gets into the CMD version
+
+    run --help : gets the help menu
+
+    run --version : gets the version of the program
+
+    run --soundOn : runs the program with sound on
+
+    run --soundOff : runs the program with sound off
+
 ps. in github you might see commits called "last known version %Program-version%-%Dev-Version%"
 
 well it grabs the **latest** version (even if its not working) and pushes it to git hub, so no work can be corrupted
