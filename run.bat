@@ -5,7 +5,7 @@ echo IN BETA 0.4.0
 echo.
 echo.
 
-dir /b > filelist.txt
+dir /d > filelist.txt
 
 
 for /f "Delims=" %%a in (versionDev.txt) do (

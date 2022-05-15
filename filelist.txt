@@ -1,7 +1,10 @@
-filelist.txt
-readme.md
-readme.txt
-requirements.txt
-run.bat
-src
-versionDev.txt
+ Volume in drive C is Windows
+ Volume Serial Number is 6E83-A13F
+
+ Directory of C:\Users\jacob\codeFiles\python projects\school_milestones
+
+[.]                readme.md          run.bat            
+[..]               readme.txt         [src]              
+filelist.txt       requirements.txt   versionDev.txt     
+               6 File(s)          1,939 bytes
+               3 Dir(s)  281,896,960,000 bytes free
