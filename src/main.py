@@ -88,7 +88,7 @@ def startUp(args1):
             print("1. get points\n2. buy time\n3. remove points\n4. add points\n5. exit")
             choice1 = input("\n\n>>>")
             if choice1 == "1":
-                print("\n1. math quiz\n2. math test\n3. english test\n4. science test\n5. history test\n6. religion test\n7. vocab test\n8. spelling test\n9. exit")
+                print("\n1. math quiz - 15\n2. math test - 30\n3. english test - 60\n4. science test - 30\n5. history test - 30\n6. religion test - 60\n7. vocab test - 15\n8. spelling test - 60\n9. exit")
                 choice2 = input("\n\n>>>")
                 if choice2 == "1":
                     pointsFile.seek(0)
